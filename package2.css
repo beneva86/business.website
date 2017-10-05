@@ -1,0 +1,234 @@
+/*FLEXBOX CSS*/
+
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  font-family: Poppins, Raleway, sans-serif;
+  background: #f2f2f2;
+}
+
+h1 { font-size: 40px; 
+text-shadow: 2px 2px black;                      /*  Eva   */
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  justify-content: center;                        /*  Eva   */
+  text-align: center;                              /*  Eva   */
+  text-shadow: 2px 2px black;                      /*  Eva   */                        
+}
+
+h4 { font-size: 28px;
+  text-shadow: 2px 2px black;                  /*  Eva   */
+  }
+
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+}
+/*#main > nav, 
+#main > aside {
+  flex: 0 0 20vw;
+  background: beige;
+}
+#main > nav {
+  order: -1;
+}*/
+
+/*HEADER CSS*/
+header {
+  background: red;
+  height: 8vh;
+  text-align: center;
+  padding: 5em;
+  padding-box width: 5em;
+  padding-box height: 5em;
+}
+/*FOOTER CSS*/
+footer {
+  background: red;
+  height: 8vh;
+  text-align: center;
+  text-decoration-color: white;
+  padding: 1em;
+  padding-box width: 2em;
+  padding-box height: 2em;
+}
+/*ARTICLE CSS*/
+article {
+  padding: 1em;
+  padding-box width: 20em;
+  padding-box height: 20em;
+}
+
+
+/*BANNER CSS*/
+.banner h1, .banner h1, .banner h4 {
+  margin: 0;
+  text-shadow: 2px 2px 6px #000;
+  text-align: center;
+}
+
+.banner {
+  color: white;
+  background: url(images/Zaanse-Schans2.jpg) top left/cover no-repeat;
+  background-size: cover;             /*  Eva   */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+                      
+}
+
+/*NAVIGATION CSS*/
+.navigation {
+  list-style: none;
+  margin: 0; 
+  position: fixed;
+  background: red;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+align-items: center;
+  -webkit-flex-flow: row wrap;
+  /*justify-content: flex-end;*/
+  overflow: hidden;                                 /*  Eva   */
+   height: 10%;                                    /*  Eva   */
+  margin-top: 0;                                    /*  Eva   */           
+
+}
+
+.navigation li:first-child {
+  margin-right: auto;
+}
+
+.navigation li:nth-child(5) {
+  margin-right: 70px;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: darken(deepskyblue, 2%);
+}
+
+@media all and (max-width: 800px) {
+.navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 50px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+ .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+
+
+/* FLEX CARDS CSS(situated in article part of flexbox)*/
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+  justify-content: space-between;                 
+  
+                              
+}
+ /*.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;*/
+  
+  .card {
+  /*flex: 0 0 200px;*/
+    flex: 0 1 24%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+    text-align: center;                /*  Eva   */
+  }
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }
+
+/*BUTTON CSS*/
+
+    button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0em;
+    font: 11px system-ui;
+}
+
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+button {
+    -webkit-appearance: button;
+}
