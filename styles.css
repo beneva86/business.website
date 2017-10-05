@@ -12,14 +12,14 @@ body {
   background: #f2f2f2;
 }
 
-h1 { font-size: 50px; }
+h1 { font-size: 40px; }
 h3 {
   font-size: 32px;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
-h4 { font-size: 28px; }
+h4 { font-size: 28px;}
 }
 #main {
   display: flex;
@@ -36,17 +36,36 @@ h4 { font-size: 28px; }
 #main > nav {
   order: -1;
 }*/
-header, footer {
+
+/*HEADER CSS*/
+header {
   background: red;
-  height: 20vh;
+  height: 8vh;
   text-align: center;
+  padding: 5em;
+  padding-box width: 5em;
+  padding-box height: 5em;
 }
-header, footer, article, {
+/*FOOTER CSS*/
+footer {
+  background: red;
+  height: 8vh;
+  text-align: center;
+  text-decoration-color: white;
   padding: 1em;
+  padding-box width: 2em;
+  padding-box height: 2em;
+}
+/*ARTICLE CSS*/
+article {
+  padding: 1em;
+  padding-box width: 20em;
+  padding-box height: 20em;
 }
 
+
 /*BANNER CSS*/
-.banner h1, .banner h3, .banner h6 {
+.banner h1, .banner h1, .banner h4 {
   margin: 0;
   text-shadow: 2px 2px 6px #000;
   text-align: center;
@@ -112,7 +131,7 @@ align-items: center;
   
   .navigation a { 
     text-align: center; 
-    padding: 5px;
+    padding: 50px;
     border-top: 1px solid rgba(255,255,255,0.3); 
     border-bottom: 1px solid rgba(0,0,0,0.1); 
   }
@@ -123,7 +142,7 @@ align-items: center;
   }
 }
 
-/* FLEX CARDS CSS*/
+/* FLEX CARDS CSS(situated in article part of flexbox)*/
 
 .cards {
    display: flex;
@@ -155,3 +174,41 @@ align-items: center;
     padding: 10px;
     width: 100%;
     }
+
+/*BUTTON CSS*/
+
+    button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0em;
+    font: 11px system-ui;
+}
+
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+button {
+    -webkit-appearance: button;
+}
