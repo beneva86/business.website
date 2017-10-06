@@ -12,14 +12,14 @@ body {
   background: #f2f2f2;
 }
 
-h1 { font-size: 50px; }
+h1 { font-size: 40px; }
 h3 {
   font-size: 32px;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
-h4 { font-size: 28px; }
+h4 { font-size: 28px;}
 }
 #main {
   display: flex;
@@ -36,17 +36,36 @@ h4 { font-size: 28px; }
 #main > nav {
   order: -1;
 }*/
-header, footer {
+
+/*HEADER CSS*/
+header {
   background: red;
-  height: 20vh;
+  height: 8vh;
   text-align: center;
+  padding: 5em;
+  padding-box width: 5em;
+  padding-box height: 5em;
 }
-header, footer, article, {
+/*FOOTER CSS*/
+footer {
+  background: red;
+  height: 8vh;
+  text-align: center;
+  text-decoration-color: white;
   padding: 1em;
+  padding-box width: 2em;
+  padding-box height: 2em;
+}
+/*ARTICLE CSS*/
+article {
+  padding: 1em;
+  padding-box width: 20em;
+  padding-box height: 20em;
 }
 
+
 /*BANNER CSS*/
-.banner h1, .banner h3, .banner h6 {
+.banner h1, .banner h1, .banner h4 {
   margin: 0;
   text-shadow: 2px 2px 6px #000;
   text-align: center;
@@ -62,7 +81,7 @@ header, footer, article, {
 }
 
 /*NAVIGATION CSS*/
-/*.navigation {
+.navigation {
   list-style: none;
   margin: 0; 
   position: fixed;
@@ -75,7 +94,7 @@ header, footer, article, {
   display: flex;
 align-items: center;
   -webkit-flex-flow: row wrap;
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/
 }
 
 .navigation li:first-child {
@@ -95,66 +114,7 @@ align-items: center;
 
 .navigation a:hover {
   background: darken(deepskyblue, 2%);
-}*/
-
-.navigation {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
 }
-
-.navigation a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-}
-
-.navigation a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-
 
 @media all and (max-width: 800px) {
   .navigation {
@@ -171,10 +131,9 @@ align-items: center;
   
   .navigation a { 
     text-align: center; 
-    padding: 5px;
+    padding: 50px;
     border-top: 1px solid rgba(255,255,255,0.3); 
     border-bottom: 1px solid rgba(0,0,0,0.1); 
-    
   }
 
   
@@ -183,7 +142,7 @@ align-items: center;
   }
 }
 
-/* FLEX CARDS CSS*/
+/* FLEX CARDS CSS(situated in article part of flexbox)*/
 
 .cards {
    display: flex;
@@ -215,3 +174,41 @@ align-items: center;
     padding: 10px;
     width: 100%;
     }
+
+/*BUTTON CSS*/
+
+    button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0em;
+    font: 11px system-ui;
+}
+
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+button {
+    -webkit-appearance: button;
+}
