@@ -38,7 +38,7 @@ h4 { font-size: 28px;}
 }*/
 
 /*HEADER CSS*/
-header {
+.header {
   background: red;
   height: 8vh;
   text-align: center;
@@ -47,17 +47,19 @@ header {
   padding-box height: 5em;
 }
 /*FOOTER CSS*/
-footer {
+.footer{
   background: red;
-  height: 8vh;
+  height: 12vh;
   text-align: center;
-  text-decoration-color: white;
+  color: white;
   padding: 1em;
   padding-box width: 2em;
   padding-box height: 2em;
+  /*align-items: inline;*/
 }
+  
 /*ARTICLE CSS*/
-article {
+.article {
   padding: 1em;
   padding-box width: 20em;
   padding-box height: 20em;
@@ -73,7 +75,10 @@ article {
 
 .banner {
   color: white;
-  background: url(images/bannerimage.png) top left/cover no-repeat;
+  /*background: url(images/Keukenhof-Gardens-Amsterdam-720x404.jpg) top left cover no-repeat;*/
+  background: url(images/Keukenhof-Gardens-Amsterdam-720x404.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
   height: 500px;
   display: flex;
   justify-content: center;
