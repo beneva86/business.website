@@ -56,16 +56,20 @@ header {
   padding-box width: 5em;
   padding-box height: 5em;
 }
+
 /*FOOTER CSS*/
-footer {
+
+.footer{
   background: red;
-  height: 8vh;
+  height: 12vh;
   text-align: center;
-  text-decoration-color: white;
+  color: white;
   padding: 1em;
   padding-box width: 2em;
   padding-box height: 2em;
+  /*align-items: inline;*/
 }
+
 /*ARTICLE CSS*/
 article {
 /*  padding: 1em;
@@ -83,13 +87,13 @@ article {
 
 .banner {
   color: white;
-  background: url(images/giethoorn.jpg) top left/cover no-repeat;
+  background: url(images/giethoorn_720.jpg) top left/cover no-repeat;
   background-size: 100% 100%;             /*  Eva   */
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 3%;
                       
 }
 
